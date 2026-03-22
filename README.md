@@ -1,1 +1,3 @@
-# Backend_practice
+# Backend Practice
+
+This repository is for backend practice.
