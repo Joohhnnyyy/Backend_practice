@@ -1,0 +1,72 @@
+[
+  {
+    "username": "ansh_johnson",
+    "email": "ansh.johnson@gmail.com",
+    "password": "hashed_password_1",
+    "bio": "Backend developer passionate about scalable systems.",
+    "profileImage": "https://randomuser.me/api/portraits/men/1.jpg"
+  },
+  {
+    "username": "code_master",
+    "email": "code.master@gmail.com",
+    "password": "hashed_password_2",
+    "bio": "Loves solving complex coding problems.",
+    "profileImage": "https://randomuser.me/api/portraits/men/2.jpg"
+  },
+  {
+    "username": "dev_wizard",
+    "email": "dev.wizard@gmail.com",
+    "password": "hashed_password_3",
+    "bio": "Turning coffee into code since 2020.",
+    "profileImage": "https://randomuser.me/api/portraits/men/3.jpg"
+  },
+  {
+    "username": "tech_guru",
+    "email": "tech.guru@gmail.com",
+    "password": "hashed_password_4",
+    "bio": "Exploring AI and cloud technologies.",
+    "profileImage": "https://randomuser.me/api/portraits/men/4.jpg"
+  },
+  {
+    "username": "debug_king",
+    "email": "debug.king@gmail.com",
+    "password": "hashed_password_5",
+    "bio": "Fixing bugs faster than they appear.",
+    "profileImage": "https://randomuser.me/api/portraits/men/5.jpg"
+  },
+  {
+    "username": "node_ninja",
+    "email": "node.ninja@gmail.com",
+    "password": "hashed_password_6",
+    "bio": "Node.js and Express enthusiast.",
+    "profileImage": "https://randomuser.me/api/portraits/men/6.jpg"
+  },
+  {
+    "username": "mongo_master",
+    "email": "mongo.master@gmail.com",
+    "password": "hashed_password_7",
+    "bio": "Database design and optimization expert.",
+    "profileImage": "https://randomuser.me/api/portraits/men/7.jpg"
+  },
+  {
+    "username": "api_builder",
+    "email": "api.builder@gmail.com",
+    "password": "hashed_password_8",
+    "bio": "Designing clean and efficient APIs.",
+    "profileImage": "https://randomuser.me/api/portraits/men/8.jpg"
+  },
+  {
+    "username": "stack_overflowed",
+    "email": "stack.overflowed@gmail.com",
+    "password": "hashed_password_9",
+    "bio": "Debugging life one error at a time.",
+    "profileImage": "https://randomuser.me/api/portraits/men/9.jpg"
+  },
+  {
+    "username": "fullstack_freak",
+    "email": "fullstack.freak@gmail.com",
+    "password": "hashed_password_10",
+    "bio": "Frontend + Backend = ❤️",
+    "profileImage": "https://randomuser.me/api/portraits/men/10.jpg"
+  }
+]

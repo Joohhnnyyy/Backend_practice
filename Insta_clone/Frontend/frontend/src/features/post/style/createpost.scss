@@ -1,0 +1,60 @@
+.create-post-page{
+
+  .form-container{
+
+
+    .post-image-label{
+      height: 40px;
+      min-width: 400px;
+      background-color: whitesmoke;
+      color: rgb(24, 24, 24);
+      padding-inline: 1rem;
+      padding-block: 0.5rem;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+  height: 50vh;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+      h1{
+      font-size: 30px;
+      font-weight: 800;
+      left: 0;
+    }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    input,button{
+      min-width: 400px;
+        border: none;
+        outline: none;
+        padding-inline:1.5rem ;
+        border-radius: 1rem;
+        padding-block: 1rem;
+        background-color: white;
+        color: grey;
+    }
+
+    button{
+      background-color:crimson ;
+      color: whitesmoke;
+      min-width: 400px;
+      cursor: pointer;
+    }
+  }
+
+  .toggleAuthForm{
+    color: crimson;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+}
+}

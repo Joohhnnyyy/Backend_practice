@@ -1,0 +1,171 @@
+.main{
+  background: whitesmoke;
+
+  .left{
+    background: rgb(95, 93, 93);
+    width: 50%;
+    height: 100vh;
+    padding: 1rem;
+
+    .followers{
+      background: rgb(95, 93, 93);
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+
+      .follower-list{
+
+        h2{
+          font-size: 1.5rem;
+          font-weight: 600;
+          font-family: monospace;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        ;
+        height : 50vh;
+        margin-bottom: 10px;
+
+
+        .follower{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+
+          .follower-text{
+            font-size: 1.5rem;
+            font-weight: 200;
+          }
+
+          .left-button{
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+
+            &{
+              padding: 0.5rem 1rem;
+              border-radius: 5px;
+              border: none;
+              background: white;
+              color: black;
+              cursor: pointer;
+            }
+          }
+
+          img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+        }
+      }
+
+
+      
+    }
+    .following{
+      
+
+      .following-list{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1rem;
+              h2{
+          font-size: 1.5rem;
+          font-weight: 600;
+          font-family: monospace;
+        }
+
+
+        .following-people{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          gap: 1.5rem;
+
+          
+
+          .following-text{
+            font-size: 1.5rem;
+            font-weight: 200;
+          }
+
+          .left-button{
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+
+            &{
+              padding: 0.5rem 1rem;
+              border-radius: 5px;
+              border: none;
+              background: white;
+              color: black;
+              cursor: pointer;
+            }
+          }
+
+          img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgb(95, 93, 93);
+    width: 50%;
+    height: 100vh;
+    padding: 1rem;
+
+    h2{
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: monospace;
+    }
+
+    .suggestion{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+
+      &{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.5rem;
+        img{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+        button{
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+          border: none;
+          background: crimson;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+
+
+
+
+  }
+}
