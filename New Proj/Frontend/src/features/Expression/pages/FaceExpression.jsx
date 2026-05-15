@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "../style/expression.scss"
 import { init ,startCamera ,handleDetectClick} from "../utils/utils";
 
-const FaceExpression = () => {
+const FaceExpression = ({ onMoodDetected }) => {
   const videoRef = useRef(null);
   const [faceLandmarker, setFaceLandmarker] = useState(null);
   const [expression, setExpression] = useState("Loading...");
@@ -27,9 +27,9 @@ const FaceExpression = () => {
         }}
       />
       <h1 style={{ marginTop: "20px" }}>{expression}</h1>
-      <button className="detect-button" onClick={()=>
-        handleDetectClick(faceLandmarker,videoRef,setExpression)
-        }>
+      <button className="detect-button" onClick={()=>{
+        handleDetectClick(faceLandmarker,videoRef,setExpression, onMoodDetected)
+      }}>
         Detect Expression
       </button>
     </div>

@@ -49,8 +49,15 @@ export const getExpressionFromBlendshapes = (blendshapes) => {
 };
 
 
+// Map emotion to mood enum
+const emotionToMood = (expression) => {
+  if (expression.includes("Happy")) return "happy";
+  if (expression.includes("Angry")) return "angry";
+  return "sad"; // default for neutral/blink
+};
+
 // Button Click Handler - Detect Expression Once
-export const handleDetectClick = (faceLandmarker,videoRef,setExpression) => {
+export const handleDetectClick = (faceLandmarker,videoRef,setExpression, onMoodDetected) => {
       if (!faceLandmarker || !videoRef.current || videoRef.current.readyState !== 4) {
         setExpression("❌ Camera not ready");
         return;
@@ -63,6 +70,10 @@ export const handleDetectClick = (faceLandmarker,videoRef,setExpression) => {
         const blendshapes = results.faceBlendshapes[0].categories;
         const expr = getExpressionFromBlendshapes(blendshapes);
         setExpression(expr);
+        const mood = emotionToMood(expr);
+        if (onMoodDetected) {
+          onMoodDetected(mood);
+        }
       } else {
         setExpression("😐 No face detected");
       }

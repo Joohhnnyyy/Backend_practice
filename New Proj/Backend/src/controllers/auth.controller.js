@@ -5,6 +5,12 @@ const redis = require("../config/cache")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 
+const cookieOptions = {
+  httpOnly: true,
+  secure: process.env.NODE_ENV === "production",
+  sameSite: process.env.NODE_ENV === "production" ? "none" : "lax"
+}
+
 async function registerController(req,res){
 try{  const {username , email, password } = req.body;
   if(!username || !email || !password){
@@ -49,11 +55,7 @@ if (isUserAlreadyExist) {
     expiresIn:"3d"
   })
 
-  res.cookie("token",token,{
-    httpOnly:true,
-    secure: true,
-    sameSite:"strict",
-  })
+  res.cookie("token",token,cookieOptions)
 
   res.status(201).json({
     message:"Regestration Successfull",
@@ -103,11 +105,7 @@ const token = jwt.sign({
   {
       expiresIn:"3d"
   })
-  res.cookie("token",token,{
-    httpOnly:true,
-    secure: true,
-    sameSite:"strict",
-  })
+  res.cookie("token",token,cookieOptions)
   res.status(200).json({
     message:"Login Successfull",
     username:user.username,
